@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Nunito:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,700&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --bg1-:#171718;
+    --bg2-:#1C1E22;
+    --blanco-:#FFFFFF;
+    --border-:#26292D;
+    --primary-:#5C62EC;
+    --hover-:#3C40AE;
+    --acento-:#85BFD1;
+    --gris:#A0A0A1;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg2-);
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* nav */
+
+nav h1 {
+    margin: 0;
+}
+
+nav {
+    padding: 10px 16px;
+    color: var(--primary-);
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    background-color: var(--bg1-);
+    box-shadow: var(--primary-) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+/* content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gamebox {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: fit-content;
+    border: 2px solid var(--primary-);
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--primary-);
+}
+
+.box:hover {
+    background-color: var(--hover-);
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    gap: 10px;
+}
+
+.btn button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: var(--primary-);
+    background-color: var(--bg2-);
+    border: 2px solid var(--primary-);
+    transition: all 0.2s ease-in;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    background-color: var(--primary-);
+    color: var(--blanco-);
+}
+
+/* footer */
+footer {
+    color: var(--primary-);
+    font-size: 1.3em;
+    text-align: center;
+}
